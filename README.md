@@ -16,7 +16,7 @@ npm install sanity-plugin-shared-notes
 ## Installation
 
 ```sh
-npm install sanity-plugin-sanity-shared-notes
+npm i sanity-plugin-shared-notes
 ```
 ---
 
