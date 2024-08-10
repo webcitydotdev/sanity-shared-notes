@@ -3,7 +3,7 @@
 > This is a **Sanity Studio v3** plugin.
 
 ## Installation
-
+Into your sanity cms root :
 ```sh
 npm install sanity-plugin-shared-notes
 ```
