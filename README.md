@@ -85,11 +85,11 @@ Add it as a plugin in `sanity.config.ts` (or .js):
 
 ```ts
 import {defineConfig} from 'sanity'
-import {myPlugin} from 'sanity-plugin-shared-notes'
+import { sharedNotesNotepadPlugin } from 'sanity-plugin-shared-notes'
 
 export default defineConfig({
   //...
-  plugins: [myPlugin({})],
+  plugins: [sharedNotesNotepadPlugin()],
 })
 ```
 
