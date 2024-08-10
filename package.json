@@ -1,0 +1,81 @@
+{
+  "name": "sanity-plugin-shared-notes",
+  "version": "1.0.0",
+  "description": "The Shared Notes Notepad Plugin is a lightweight, non-intrusive addition to Sanity Studio that provides a convenient shared notepad functionality for team collaboration. Features: Seamless Integration: Adds a collapsible notepad interface to your Sanity Studio without interfering with existing content models or the studio's structure.",
+  "keywords": [
+    "sanity",
+    "sanity-plugin"
+  ],
+  "homepage": "https://github.com/webcitydotdev/sanity-shared-notes#readme",
+  "bugs": {
+    "url": "https://github.com/webcitydotdev/sanity-shared-notes/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/webcitydotdev/sanity-shared-notes.git"
+  },
+  "license": "MIT",
+  "author": "info webcity <info@webcity.dev>",
+  "sideEffects": false,
+  "type": "commonjs",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "import": "./dist/index.mjs",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "sanity.json",
+    "src",
+    "v2-incompatible.js"
+  ],
+  "scripts": {
+    "build": "plugin-kit verify-package --silent && pkg-utils build --strict --check --clean",
+    "format": "prettier --write --cache --ignore-unknown .",
+    "link-watch": "plugin-kit link-watch",
+    "lint": "eslint .",
+    "prepublishOnly": "npm run build",
+    "watch": "pkg-utils watch --strict",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@sanity/incompatible-plugin": "^1.0.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.4.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@sanity/pkg-utils": "^6.10.9",
+    "@sanity/plugin-kit": "^4.0.18",
+    "@sanity/semantic-release-preset": "^5.0.0",
+    "@types/react": "^18.3.3",
+    "@typescript-eslint/eslint-plugin": "^8.0.1",
+    "@typescript-eslint/parser": "^8.0.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-sanity": "^7.1.2",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.8",
+    "prettier": "^3.3.3",
+    "prettier-plugin-packagejson": "^2.5.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sanity": "^3.53.0",
+    "styled-components": "^6.1.12",
+    "typescript": "^5.5.4"
+  },
+  "peerDependencies": {
+    "react": "^18",
+    "sanity": "^3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
