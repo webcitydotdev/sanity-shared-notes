@@ -1,14 +1,3 @@
-# sanity-plugin-shared-notes
-
-> This is a **Sanity Studio v3** plugin.
-
-## Installation
-
-```sh
-npm install sanity-plugin-shared-notes
-```
-
----
 # sanity-plugin-sanity-shared-notes
 
 > This is a **Sanity Studio v3** plugin.
