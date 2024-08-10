@@ -2,10 +2,6 @@
 
 > This is a **Sanity Studio v3** plugin.
 
-# sanity-plugin-sanity-shared-notes
-
-> This is a **Sanity Studio v3** plugin.
-
 ## Installation
 
 ```sh
